@@ -23,8 +23,8 @@ html {
 
 .hand {
     width: 50%;
-    height: 1rem;
-    background: rgba(167, 217, 216, 0.635);
+    height: .75rem;
+    background: rgba(255, 255, 255, 0.635);
     position: absolute;
     top: 50%;
     transform-origin: 100%;
@@ -34,9 +34,11 @@ html {
 }
 
 .min-hand {
-    background: rgba(167, 217, 189, 0.635);
+    background: rgba(167, 217, 216, 0.635);
 }
 
 .sec-hand {
+    height: .50rem;
     background: rgba(180, 167, 217, 0.635);
 }
+
