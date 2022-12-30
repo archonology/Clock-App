@@ -48,9 +48,9 @@
             const minutes = now.getMinutes();
             const hours = now.getHours();
             //begin converting time count into degrees -- adding 90 to offset the resting style set to 90 deg
-            const secondsDegrees = ((seconds / 60) * 360 + 90);
-            const minutesDegrees = ((minutes / 60) * 360 + 90);
-            const hoursDegrees = ((hours / 60) * 360 + 90);
+            const secondsDegrees = ((seconds / 60) * 360) + 90;
+            const minutesDegrees = ((minutes / 60) * 360) + 90;
+            const hoursDegrees = ((hours / 60) * 360) + 90;
             //style the second hand to move with the time
             secondHand.style.transform = `rotate(${secondsDegrees}deg)`
             minuteHand.style.transform = `rotate(${minutesDegrees}deg)`
