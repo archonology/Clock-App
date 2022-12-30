@@ -1,5 +1,7 @@
 # JS Clock App
 
+Deployed at: https://archonology.github.io/Clock-App/
+
 # Description
 For the new year I'm sharpening up my JS skills with [javascript30.com](https://javascript30.com/).  It's an awesome, free program that helps you kick up your vanilla JS skills notch.
 This second project is a clock built with vanilla JS and CSS.  Check out the deployed page to see what time it is! :)
