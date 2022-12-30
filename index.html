@@ -19,6 +19,21 @@
         </div>
     </div>
 
+    <script>
+        const secondHand = document.querySelector('.sec-hand');
+        function setDate() {
+            // console.log("time!")
+            const now = new Date();
+            const seconds = now.getSeconds();
+            //begin converting time count into degrees -- adding 90 to offset the resting style set to 90 deg
+            const secondsDegrees = ((seconds / 60) * 360 + 90);
+            //style the second hand to move with the time
+            secondHand.style.transform = `rotate(${secondsDegrees}deg)`
+            console.log(seconds);
+        }
+        setInterval(setDate, 1000);
+    </script>
+
 </body>
 
 </html>
