@@ -33,7 +33,10 @@
         let month = date.getMonth() + 1;
         let year = date.getFullYear();
 
-        let currentDate = `${month}/${day}/${year}`
+        let minutes = date.getMinutes();
+        let hour = date.getHours();
+
+        let currentDate = `${hour}:${minutes} |  ${month}/${day}/${year}`
 
         timeDisplay.innerHTML = `${currentDate}`;
 
