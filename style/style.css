@@ -29,4 +29,14 @@ html {
     top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.65, 3.25, 0.58, 0.81);
+}
+
+.min-hand {
+    background: rgba(167, 217, 189, 0.635);
+}
+
+.sec-hand {
+    background: rgba(180, 167, 217, 0.635);
 }
