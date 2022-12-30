@@ -17,12 +17,26 @@
             <div class="hand min-hand"></div>
             <div class="hand sec-hand"></div>
         </div>
+        <p class="today">Test</p>
     </div>
 
     <script>
         const secondHand = document.querySelector('.sec-hand');
         const minuteHand = document.querySelector('.min-hand');
         const hourHand = document.querySelector('.hour-hand');
+        const timeDisplay = document.querySelector(".today");
+
+
+        const date = new Date();
+
+        let day = date.getDate();
+        let month = date.getMonth() + 1;
+        let year = date.getFullYear();
+
+        let currentDate = `${month}/${day}/${year}`
+
+        timeDisplay.innerHTML = `${currentDate}`;
+
 
         function setDate() {
             // console.log("time!")
@@ -41,6 +55,8 @@
         }
 
         setInterval(setDate, 1000);
+
+
 
     </script>
 
